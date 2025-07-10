@@ -1,5 +1,5 @@
 import type{ FastifyRequest, FastifyReply } from "fastify";
-import { asyncHandle, successHandle, errorHandle } from "../utils/handler.ts";
+import { asyncHandle, successHandle, errorHandle } from "../utils/handler.js";
 
 export const controller = asyncHandle(async (request: FastifyRequest, reply: FastifyReply) => {
   try {

@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "dev": "node --watch server.ts",
+    "dev": "tsx watch server.ts",
+    "dev:ts-node": "ts-node --esm server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,6 +25,7 @@
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^24.0.12",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }
 }

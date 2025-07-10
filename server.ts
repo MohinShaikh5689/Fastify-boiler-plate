@@ -2,7 +2,7 @@ import Fastify from 'fastify';
 import type { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify';
 import dotenv from 'dotenv';
 
-import { routes } from './routes/route.ts';
+import { routes } from './routes/route.js';
 
 // Load environment variables from .env file
 dotenv.config();
